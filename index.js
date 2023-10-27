@@ -29,7 +29,7 @@ estimateTotal.basePrice = 29.99; //auto rental price
         estimateTotal.under25Price = 0;
     } 
 
-// for option check form, toll tag, gps, roadside
+// option check form for toll tag, gps, roadside
     const tollTag = document.getElementById("tollTag")
     const gps = document.getElementById("gps");
     const roadsideAssistance = document.getElementById("roadsideAssistance");
@@ -44,7 +44,7 @@ estimateTotal.basePrice = 29.99; //auto rental price
 
     
     /*estimateTotal.total = estimateTotal.under25Price*/
-    if(estimateTotal.hastollTag) estimateTotal.total += 3.95 * estimateTotal.numberDays  //multiply by number of days but its not working
+    if(estimateTotal.hastollTag) estimateTotal.total += 3.95 * estimateTotal.numberDays  //multiply by number of days but its not working:(
     if(estimateTotal.hasgps) estimateTotal.total += 2.95 * estimateTotal.numberDays
     if(estimateTotal.hasroadsideAssistance) estimateTotal.total += 2.95 * estimateTotal.numberDays
 
